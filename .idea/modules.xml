@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gate-way/api-gate-way.iml" filepath="$PROJECT_DIR$/api-gate-way/api-gate-way.iml" />
+      <module fileurl="file://$PROJECT_DIR$/erueka-server/erueka-server.iml" filepath="$PROJECT_DIR$/erueka-server/erueka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/house-biz/house-biz.iml" filepath="$PROJECT_DIR$/house-biz/house-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/house-common/house-common.iml" filepath="$PROJECT_DIR$/house-common/house-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/house-parent.iml" filepath="$PROJECT_DIR$/house-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/house-web/house-web.iml" filepath="$PROJECT_DIR$/house-web/house-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>
