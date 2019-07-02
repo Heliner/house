@@ -6,12 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/test")
 public class ApiUserController {
-    @Autowired
-    private UserService userService;
 
-    @RequestMapping("test/getusername")
-    public String getUserName(Long id) {
-        return userService.getUserName(id);
-    }
 }

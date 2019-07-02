@@ -1,5 +1,6 @@
 package com.mooc.house.api;
 
+import com.mooc.house.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,12 +21,21 @@ public class ApiGateWayApplication {
     public static void main(String[] args) {
         SpringApplication.run(ApiGateWayApplication.class, args);
     }
+
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    @RequestMapping("userInstance")
+    @RequestMapping("/userInstance")
     @ResponseBody
     public List<ServiceInstance> getRegister(){
         return discoveryClient.getInstances("user");
+    }
+
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping("/getusername")
+    public String getUserName(Long id) {
+        return userService.getUserName(id);
     }
 }
