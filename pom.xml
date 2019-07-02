@@ -26,7 +26,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 
@@ -63,5 +62,7 @@
 		<module>house-biz</module>
 		<module>house-web</module>
 		<module>api-gate-way</module>
+		<module>user-service</module>
+		<module>erueka-server</module>
 	</modules>
 </project>

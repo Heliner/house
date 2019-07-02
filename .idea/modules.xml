@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/house-parent.iml" filepath="$PROJECT_DIR$/house-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/house-web/house-web.iml" filepath="$PROJECT_DIR$/house-web/house-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service1/user-service1.iml" filepath="$PROJECT_DIR$/user-service1/user-service1.iml" />
     </modules>
   </component>
 </project>
