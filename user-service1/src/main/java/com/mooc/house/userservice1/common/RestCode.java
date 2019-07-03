@@ -3,7 +3,8 @@ package com.mooc.house.userservice1.common;
 public enum RestCode {
     OK(0, "OK"),
     UNKOWN_ERROR(1, "服务异常"),
-    WRONG_PAGE(10100, "页码不存在");
+    WRONG_PAGE(10100, "页码不存在"),
+    USER_NOT_LOGIN(3, "用户为登陆");
 
     public final int code;
     public final String msg;

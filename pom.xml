@@ -62,7 +62,7 @@
 		<module>house-biz</module>
 		<module>house-web</module>
 		<module>api-gate-way</module>
-		<module>user-service</module>
+		<module>user-service1</module>
 		<module>erueka-server</module>
 	</modules>
 </project>

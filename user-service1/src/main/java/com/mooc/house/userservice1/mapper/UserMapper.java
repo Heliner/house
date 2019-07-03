@@ -8,8 +8,12 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
     User selectById(Long id);
+
     List<User> select(User user);
-    int update(User user);
-    int insert(User account);
-    int delete(String email);
+
+    void update(User user);
+
+    void insert1(User account);
+
+    void delete(String email);
 }

@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -24,13 +25,41 @@ public class UserController {
     //查询
     @RequestMapping("/getById")
     public RestResponse<User> getUserById(Long id) {
-       User user = userService.getUserById(id);
-        return  RestResponse.success(user);
+        User user = userService.getUserById(id);
+        return RestResponse.success(user);
     }
 
     @RequestMapping("/getList")
-    public RestResponse<List<User>> getUserList(@RequestBody User user){
+    public RestResponse<List<User>> getUserList(@RequestBody User user) {
         List<User> users = userService.getUserByQuery(user);
         return RestResponse.success(users);
+    }
+
+    @RequestMapping("add")
+    public RestResponse add(@RequestBody User user) {
+        userService.addAccount(user, user.getEnableUrl());
+        return RestResponse.success();
+    }
+
+    @RequestMapping("enable")
+    public RestResponse<User> enable(String key) {
+        userService.enable(key);
+        return RestResponse.success();
+    }
+    @RequestMapping("auth")
+    public RestResponse<User> auth(@RequestBody User user){
+        User finalUser = userService.auth(user.getEmail(),user.getPasswd());
+        return RestResponse.success();
+    }
+    @RequestMapping("get")
+    public RestResponse<User> getUser(String token){
+        User findUser=userService.getLoginedUserByToken(token);
+        return RestResponse.success(findUser);
+    }
+
+    @RequestMapping("logout")
+    public RestResponse<Object> logout(String token){
+        userService.invalidate(token);
+        return RestResponse.success();
     }
 }

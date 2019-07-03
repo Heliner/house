@@ -47,7 +47,14 @@ public class BeanHelper {
       return;
     }
   }
-  
+
+    /**
+     * 为数字，时间，字符串设置默认值
+     * @param target
+     * @param clazz
+     * @param descriptors
+     * @param <T>
+     */
   private static <T> void innerDefault(T target, Class<?> clazz, PropertyDescriptor[] descriptors) {
 	    for (PropertyDescriptor propertyDescriptor : descriptors) {
 	      String fieldName = propertyDescriptor.getName();

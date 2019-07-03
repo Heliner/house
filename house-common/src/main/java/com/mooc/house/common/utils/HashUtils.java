@@ -17,4 +17,7 @@ public class HashUtils {
 	   return hashCode.toString();
 	}
 
+	public static String hashString(String email) {
+		return FUNCTION.hashString(email,Charset.forName("UTF-8")).toString();
+	}
 }

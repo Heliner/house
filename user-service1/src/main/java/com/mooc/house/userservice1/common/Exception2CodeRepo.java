@@ -9,6 +9,7 @@ import org.apache.commons.lang.reflect.FieldUtils;
 public class Exception2CodeRepo {
     private static final ImmutableMap<Object, RestCode> MAP = ImmutableMap.<Object, RestCode>builder()
             .put(IllegalParamsException.Type.WRONG_PAGE_NUM, RestCode.WRONG_PAGE)
+            .put(UserException.Type.USER_NOT_LOGIN,RestCode.USER_NOT_LOGIN)
             .put(IllegalStateException.class, RestCode.UNKOWN_ERROR).build();
 
 

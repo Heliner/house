@@ -6,13 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-service" />
-        <module name="api-gate-way" />
         <module name="erueka-server" />
         <module name="house-biz" />
         <module name="user-service1" />
         <module name="house-common" />
         <module name="house-web" />
+        <module name="api-gate-way" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
