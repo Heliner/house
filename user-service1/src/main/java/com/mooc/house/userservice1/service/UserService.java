@@ -104,6 +104,7 @@ public class UserService {
         User user = new User();
         user.setEmail(email);
         user.setPasswd(HashUtils.encryPassword(passwd));
+        System.out.println("password:"+HashUtils.encryPassword(passwd));
         user.setEnable(1);
         List<User> list = getUserByQuery(user);
         if (!list.isEmpty()) {

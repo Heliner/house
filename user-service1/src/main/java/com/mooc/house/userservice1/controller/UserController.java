@@ -49,7 +49,7 @@ public class UserController {
     @RequestMapping("auth")
     public RestResponse<User> auth(@RequestBody User user){
         User finalUser = userService.auth(user.getEmail(),user.getPasswd());
-        return RestResponse.success();
+        return RestResponse.success(finalUser);
     }
     @RequestMapping("get")
     public RestResponse<User> getUser(String token){

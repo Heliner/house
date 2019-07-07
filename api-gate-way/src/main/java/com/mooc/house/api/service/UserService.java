@@ -9,7 +9,7 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
-    public String getUserName(Long id) {
-        return userDao.getUserName(id);
-    }
+//    public String getUserName(Long id) {
+//        return userDao.getUserName(id);
+//    }
 }
