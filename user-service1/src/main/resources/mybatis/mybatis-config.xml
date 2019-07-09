@@ -18,7 +18,7 @@
 
     <typeAliases>
       <typeAlias type="com.mooc.house.userservice1.model.User"        alias="user"/>
-<!--      <typeAlias type="com.mooc.house.userservice1.model.Agency"        alias="agency"/>-->
+      <typeAlias type="com.mooc.house.userservice1.model.Agency"        alias="agency"/>
     </typeAliases>
 
     <typeHandlers>
@@ -26,7 +26,7 @@
 
     <mappers> 
       <mapper resource="mapper/user.xml"/> 
-<!--      <mapper resource="mapper/agency.xml"/> -->
+      <mapper resource="mapper/agency.xml"/>
     </mappers>
 
 

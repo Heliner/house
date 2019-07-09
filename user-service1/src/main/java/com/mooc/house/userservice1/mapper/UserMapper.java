@@ -1,19 +1,24 @@
 package com.mooc.house.userservice1.mapper;
 
+import java.util.List;
+
 import com.mooc.house.userservice1.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
-import java.util.List;
+
 
 @Mapper
 public interface UserMapper {
-    User selectById(Long id);
+  
+  User selectById(Long id);
+  
+  List<User> select(User user);
+  
+  int update(User user);
+  
+  int insert(User account);
+  
+  int delete(String email);
 
-    List<User> select(User user);
-
-    void update(User user);
-
-    void insert1(User account);
-
-    void delete(String email);
+  User selectByEmail(String email);
 }

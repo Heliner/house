@@ -10,9 +10,18 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/erueka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/api-gate-way/pom.xml" />
         <option value="$PROJECT_DIR$/user-service1/pom.xml" />
+        <option value="$PROJECT_DIR$/house-srv/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/comment-srv/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/api-gate-way/pom.xml" />
+        <option value="$PROJECT_DIR$/house-web/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="NodePackageJsonFileManager">

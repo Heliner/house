@@ -45,7 +45,7 @@
     </select>
 
 
-    <insert id="insert1" parameterType="user">
+    <insert id="insert" parameterType="user">
     insert into  user (
 	                 name,
                      phone,
@@ -97,6 +97,10 @@
      delete from user
      where email = #{email}
    </delete>
-
+    <select id="selectByEmail">
+        select
+        <include refid="userField"/>
+        from user where email = #{email}
+    </select>
 
 </mapper>

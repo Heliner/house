@@ -2,7 +2,7 @@ package com.mooc.house.userservice1.service;
 
 import java.util.List;
 
-import com.mooc.house.common.page.PageParams;
+import com.mooc.house.userservice1.common.PageParams;
 import com.mooc.house.userservice1.mapper.AgencyMapper;
 import com.mooc.house.userservice1.model.Agency;
 import com.mooc.house.userservice1.model.User;

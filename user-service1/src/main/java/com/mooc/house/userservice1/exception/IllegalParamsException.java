@@ -1,15 +1,28 @@
 package com.mooc.house.userservice1.exception;
 
-public class IllegalParamsException extends RuntimeException implements WithTypeException {
+public class IllegalParamsException extends RuntimeException implements WithTypeException{
 
-    private final Type type;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
-    public IllegalParamsException(Type type, String msg) {
-        super(msg);
-        this.type = type;
-    }
-
-    public enum Type {
-        WRONG_PAGE_NUM, WRONG_TYPE;
-    }
+	private Type type;
+	
+	public IllegalParamsException(){
+		
+	}
+	
+	public IllegalParamsException(Type type,String msg){
+		super(msg);
+		this.type = type;
+	}
+	
+	public Type type(){
+		return type;
+	}
+	
+	public enum Type{
+		WRONG_PAGE_NUM,WRONG_TYPE
+	}
 }

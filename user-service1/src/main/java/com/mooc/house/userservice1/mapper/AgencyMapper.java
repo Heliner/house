@@ -1,7 +1,7 @@
 package com.mooc.house.userservice1.mapper;
 
 
-import com.mooc.house.common.page.PageParams;
+import com.mooc.house.userservice1.common.PageParams;
 import com.mooc.house.userservice1.model.Agency;
 import com.mooc.house.userservice1.model.User;
 import org.apache.ibatis.annotations.Mapper;

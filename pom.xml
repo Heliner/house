@@ -60,9 +60,9 @@
 	<modules>
 		<module>house-common</module>
 		<module>house-biz</module>
-		<module>house-web</module>
-		<module>api-gate-way</module>
+		<module>api-gateway</module>
 		<module>user-service1</module>
 		<module>erueka-server</module>
+		<module>house-srv</module>
 	</modules>
 </project>
